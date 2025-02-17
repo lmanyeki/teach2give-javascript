@@ -163,6 +163,3 @@ console.log(!false); // true
 **Bitwise**  
 **Ternary**  
 **Type**  
-
-
-
