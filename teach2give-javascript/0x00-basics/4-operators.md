@@ -164,3 +164,5 @@ console.log(!false); // true
 **Ternary**  
 **Type**  
 
+
+
