@@ -38,3 +38,4 @@ let minutes_tuill_new_year = 55;
 let minutesTillNewYear = 55;  
 **pascal case convention - pascal, js: classes**  
 let MinutesTillNewYear = 55;  
+
