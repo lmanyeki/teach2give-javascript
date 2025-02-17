@@ -19,5 +19,7 @@ Template literals use backticks (`) and '${}' placeholders for variables.
 let action = "bouncing";
 let gender = "baby boy";
 console.log(`It is a ${action} ${gender}`); // Output: It is a bouncing baby boy
-```
+```   
+
+
 

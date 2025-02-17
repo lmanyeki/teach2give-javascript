@@ -68,4 +68,7 @@ console.log(booleanConvert)
 
 console.log(typeof booleanConvert)
 // string
-```
+```      
+
+
+
