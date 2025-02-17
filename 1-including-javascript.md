@@ -9,7 +9,7 @@ Javascript is a dynamic computer programming language.
 - Less server interaction.  
 - Immediate feedback to the visitors.  
 - Increased interactivity.  
-- Richer interfaces.  
+- Richer interfaces.   
 ### Limitations of JavaScript  
 - Client-side JavaScript does not allow the reading or writing of files. This has
 been kept for security reason.  
