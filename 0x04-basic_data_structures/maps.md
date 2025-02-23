@@ -11,7 +11,7 @@ When we iterate over the map object it returns the key, and value pair in the sa
 - Passing an Array to new Map()
 - Create a Map and use Map.set()
 - Passing an Array to new Map()
-```
+```js
 // Create a map by passing an array of key-value pairs to the map constructor
 const arrayMap = new Map([
     ['key1', 'value1'],
@@ -25,13 +25,13 @@ console.log(arrayMap.get('key2'));  // Output: "value2"
 console.log(arrayMap.get('key3'));  // Output: "value3"
 ```
 Output
-```
+```js
 value1
 value2
 value3
 ```
 ### Create a Map and use Map.set()
-```
+```js
 // Create an empty Map and use Map.set() to add key-value pairs
 const setMap = new Map();
  
@@ -46,7 +46,7 @@ console.log(setMap.get('age'));   // Output: 25
 console.log(setMap.get('city'));  // Output: "New York"
 ```
 Output
-```
+```js
 John
 25
 New York
@@ -54,7 +54,7 @@ New York
 
 - Map()	- Create Map objects in JavaScript.
 
-```
+```js
 // map1 contains
 // 1 => 10
 // 2 => 20
@@ -69,13 +69,13 @@ console.log("Map1: ");
 console.log(map1);
 ```
 Output
-```
+```js
 Map1: 
 Map(4) { 1 => 10, 2 => 20, 3 => 30, 4 => 40 }
 ```
 
 - constructor	- It is used to return the constructor function of Map.	
-```
+```js
 function func() {
 	let map1 = new Map([
 		[1, 2],
@@ -88,10 +88,11 @@ function func() {
 func();
 ```
 Output
+
 `[Function: Map]`
 
 - size - Return the number of keys, and value pairs stored in a map.
-```
+```js
 let GFGmap = new Map();
 
 // Adding key, value pairs to the map

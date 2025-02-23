@@ -17,7 +17,7 @@ It can be created by using the Object() method or by using object initializer/li
 Objects can be created using either the **object literal syntax {}** or the **Object() constructor**.
 
 - objectName.methodName()
-```
+```js
 // Object creation
 let student = {
     name: "Martin",
@@ -45,7 +45,7 @@ A JavaScript property is a member of an object that associates a key with a valu
 An instance property is a property that has a new copy for every new instance of the class.
 
 - constructor - Returns a reference to the object constructor function that has created the instance of an object. 
-```
+```js
 		function Types() { }
 		let types = [
 			new Array(),
@@ -69,7 +69,7 @@ An instance property is a property that has a new copy for every new instance of
 		console.log(types.join('\n'));
 ```
 Output
-```
+```js
 function Types() { },false,
 function Types() { },false,
 function Types() { },false,false
@@ -85,7 +85,7 @@ JavaScript methods are actions that can be performed on objects.
 If the method is called using the Object class itself then it is called a static method of Object.
 
 - assign() - Copy the values and properties from one or more source objects to a target object.
-```
+```js
 // creating an object constructor and assigning values to it
 const obj1 = { a: 1 };
 
@@ -103,7 +103,7 @@ Output
 
 - create() - JavaScript does not have the traditional classes seen in other languages.
 
-```
+```js
 	// creating a function which will be the
 	// prototype for the object to be created later
 	function fruits() {
@@ -132,7 +132,7 @@ Output
 `fruit 1`
 
 - defineProperty() - Defines a new property directly on an object and returns the object.
-```
+```js
 const geek1 = {};
 Object.defineProperty(geek1, 'prop1', {
 	value: 65,
@@ -152,12 +152,12 @@ geek2.prop2;
 console.log(geek2.prop2);
 ```
 Output
-```
+```js
 65
 108
 ```
 - defineProperties() - Defines object a new or modifies existing properties directly on an object and it returns the object.
-```
+```js
 const geek = {};
 
 Object.defineProperties(geek, {
@@ -172,12 +172,12 @@ console.log(geek.prop1);
 console.log(geek.prop2);
 ```
 Output
-```
+```js
 geeksforgeeks
 undefined
 ```
 - entries() - Return an array consisting of enumerable property [key, value] pairs of the object.
-```
+```js
 	// creating an object constructor
 	// and assigning values to it
 	const obj = { 0: 'adam', 1: 'billy', 2: 'chris' };
@@ -192,7 +192,7 @@ Output
 
 - freeze() - There is a method Object.freeze() which is used to freeze an object.
 
-```
+```js
 // creating an object constructor and assigning values to it
 const obj1 = { property1: 'initial_data' };
 
@@ -211,7 +211,7 @@ Output
 `initial_data`
 
 - fromEntries() - Transform a list of key-value pairs into an object.
-```
+```js
 	const map1 = new Map([ ['big', 'small'], [1, 0] ]);
 	const geek = Object.fromEntries(map1);
 	console.log(geek);
@@ -224,13 +224,13 @@ Output
 	console.log(geek1);
 ```
 Output
-```
+```js
 { '1': 0, big: 'small' }
 { Geek1: 'Intern', stipend: 'Works basis' }
 ```
 - getOwnPropertyDescriptor() - Returns a property descriptor for the own property of a given object.
 
-```
+```js
 const geeks1 = {
 	prop1: "GeeksforGeeks"
 }
@@ -251,7 +251,7 @@ console.log(descriptor3.enumerable);
 console.log(descriptor3.value);
 ```
 Output
-```
+```js
 true
 true
 GeeksforGeeks
@@ -261,7 +261,7 @@ And Computer science portal
 ```
 
 - getOwnPropertyNames() - Returns all properties that are present in a given object.
-```
+```js
 const gfg = {
 	val1: "Geek1",
 	val2: "Geek2",
@@ -280,7 +280,7 @@ Object.getOwnPropertyNames(gfg2).
 	});
 ```
 Output
-```
+```js
 [ 'val1', 'val2', 'val3', 'val4' ]
 [ 'val1', 'val2', 'val3' ]
 val1: Geek1
@@ -289,7 +289,7 @@ val3: Geek3
 ```
 
 - getOwnPropertySymbols() - Returns an array of all symbol properties that are present in a given object.
-```
+```js
 	const object1 = {};
 	let vala = Symbol('geek1');
 	let valb = Symbol.for('geek2');
@@ -307,13 +307,13 @@ val3: Geek3
 	console.log(objectSymbols1.length);
 ```
 Output
-```
+```js
 2
 0
 ```
 - getPrototypeOf() - Check the prototype of an object that the user has created.
 
-```
+```js
 // Creating a simple function
 function myfun() { }
 
@@ -328,7 +328,7 @@ Output
 `{}`
 
 - hasOwn() - Checks if a given property exists or not.
-```
+```js
 let details = {
 	name: "Raj",
 	course: "DSA",
@@ -340,14 +340,14 @@ console.log(Object.hasOwn(details, 'course'));
 console.log(Object.hasOwn(details, 'phone number'));
 ```
 Output
-```
+```js
 true
 true
 false
 ```
 
 - isFrozen( ) - Determine if an object is frozen or not.
-```
+```js
 	// creating an object constructor and assigning values to it
 	const object = {
 	property: 'hi geeksforgeeks'
@@ -366,7 +366,7 @@ If the method is called on an instance of a date object then it is called an ins
 
 - defineGetter() - Called when the specified property is looked up.
 
-```
+```js
 	let obj = {};
 	obj.__defineGetter__('printTen', function() {
 	return 10;
@@ -379,7 +379,7 @@ Output
 
 - hasOwnProperty() - Check whether the object has the specified property as its own property.
 
-```
+```js
 		function checkProperty() {
 			let exampleObj = {};
 			exampleObj.height = 100;
@@ -398,13 +398,13 @@ Output
         checkProperty();
 ```
 Output
-```
+```js
 true
 false
 ```
 
 - isPrototypeOf() - Checks if an object exists in another object’s prototype chain.
-```
+```js
 function obj1() { }
 function obj2() { }
 
@@ -414,13 +414,13 @@ console.log(obj1.prototype.isPrototypeOf(obj3));
 console.log(obj2.prototype.isPrototypeOf(obj3));
 ```
 Output
-```
+```js
 true
 true
 ```
 
 - IsEnumerable() - Returns a Boolean indicating whether the specified property is enumerable and is the object’s own property.
-```
+```js
 	const obj = {};
 	const arr = [];
 	obj.property = 42;
@@ -431,7 +431,7 @@ true
 	console.log(arr.propertyIsEnumerable('length'));
 ```
 Output
-```
+```js
 true
 true
 false

@@ -184,27 +184,27 @@ Set(2) { 1, 'Hello' }
 ### Checking for element existence
 
 Checking for already existing elements.
-```
+```js
 const set3 = new Set(['a', 'b', 'c']);
 console.log(set3.has('a'));
 console.log(set3.has('z'));
 ```
 Output
-```
+```js
 true
 false
 ```
 ### Iterating over a set
 
 Iterating over the set and printing one by one.
-```
+```js
 const set4 = new Set([1, 2, 3, 4]);
 for (let item of set4) {
   console.log(item);
 }
 ```
 Output
-```
+```js
 1
 2
 3
@@ -213,7 +213,7 @@ Output
 ### Removing duplicates
 
 Removing the duplicate elements from the array using set.
-```
+```js
 const numbers = [1, 2, 2, 3, 4, 4, 5];
 const uniqueNumbers = [...new Set(numbers)];
 console.log(uniqueNumbers);
