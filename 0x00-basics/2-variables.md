@@ -12,11 +12,11 @@ e.g. let age = 45;
 - const: used for values that should not change.  
 e.g. const pi = 3.142;  
 Initializing a variable means assigning it an initial value at the time of declaration. When you try to read the value of a variable that has been declared but has not been initialized, you will get undefined as the output.  
-```
+```js
 let weight; // Declared but not initialized
 console.log(weight); // Output: undefined
 ```
-```
+```js
 let weight = 67;
 let grade = "A"; // Declared AND initialized with a value
 console.log(weight); // Output: 67

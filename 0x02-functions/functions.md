@@ -9,14 +9,14 @@ It can take inputs, perform actions and return outputs; meaning, that they can b
 To define a function, you must use the **function** keyword, followed by a name, followed by parentheses ( ). Then you have to write the function logic between curly brackets { }.
 
 Syntax:
-```
+```js
 function functionName() {
   // function body
 }
 ```
 Example
 
-```
+```js
 function sum(x, y) { 
     return x + y; 
 }
@@ -46,7 +46,7 @@ We can call a function by using the function name separated by the value of para
 
 Example
 
-```
+```js
 // Function definition
 function welcomeMsg(name) {
     return ("Hello " + name + " welcome to Murang'a University of Technology");
@@ -105,14 +105,14 @@ It is similar to a function declaration without the function name.
 Function expressions can be stored in a variable assignment. 
 
 Syntax:
-```
+```js
 let studDetails= function(paramA, paramB) {
     // Set of statements
 }
 ```
 
 Example
-```
+```js
 const mul = function (x, y) {
     return x * y;
 };
@@ -132,7 +132,7 @@ Syntax:
 `let function_name = (argument1, argument2 ,..) => expression`
 
 Example
-```
+```js
 const a = ["Hydrogen", "Helium", "Lithium", "Beryllium"];
 
 const a2 = a.map(function (s) {
@@ -146,7 +146,7 @@ const a3 = a.map((s) => s.length);
 console.log("Using Arrow Function ", a3);
 ```
 Output
-```
+```js
 Normal way  [ 8, 6, 7, 9 ]
 Using Arrow Function  [ 8, 6, 7, 9 ]
 ```
@@ -156,7 +156,7 @@ IIFE functions are executed immediately after their definition.
 They are often used to create isolated scopes.
 
 Example
-```
+```js
 (function () {
     console.log("This runs immediately!");
 })();
@@ -170,7 +170,7 @@ Output
 A callback function is passed as an argument to another function and is executed after the completion of that function.
 
 Example
-```
+```js
 function num(n, callback) {
     return callback(n);
 }
@@ -188,7 +188,7 @@ Output
 Anonymous functions are functions without a name. They are often used as arguments to other functions.
 
 Example
-```
+```js
 setTimeout(function () {
     console.log("Anonymous function executed!");
 }, 1000);
@@ -201,7 +201,7 @@ Functions defined within other functions are called nested functions.
 They have access to the variables of their parent function.
 
 Example
-```
+```js
 function outerFun(a) {
     function innerFun(b) {
         return a + b;
@@ -223,7 +223,7 @@ Pure functions return the same output for the same inputs and do not produce sid
 They do not modify state outside their scope, such as modifying global variables, changing the state of objects passed as arguments or performing I/O operations.
 
 Example
-```
+```js
 function pureAdd(a, b) {
     return a + b;
 }

@@ -3,13 +3,16 @@ These are symbols that perform operations on values.
 They are classified into the following categories:  
 **Arithmetic operators**  
 Used to perform mathematical operations.  
-e.g.    let num1 =15;   
-        let num2 = 5;  
-        console.log(num1 + num2);  
+e.g.    
+```js
+let num1 =15;   
+let num2 = 5;  
+console.log(num1 + num2); 
+``` 
 For the **increment operator**, it can be used in two ways:  
 - Post-increment (a++): returns the original value and then increments it.  
 - Pre-increment (++a): increments first then returns the updated value.  
-```
+```js
 let x = 5;
 console.log(x++); // 5 (returns first, then increments)
 console.log(x); // 6
@@ -54,7 +57,7 @@ Used to compare values and return true or false.
 *Equality operator (==)*  
 Returns true if left operand is equal to right operand and false if otherwise.  
 This converts the data types of the variables; implicit conversion.  
-```
+```js
 let a = 10;
 let b = 5;
 console.log(a == b); // false
@@ -64,7 +67,7 @@ console.log(10 == "10"); // true
 *Strict equality operator (===)*  
 Returns true if left operand is equal to right operand and false if otherwise.  
 The strict equality operator checks the data type as well, not just the values. This does not convert the data types of the variables.  
-```
+```js
 let a = 7;
 let b = 3;
 console.log(a === b); // false
@@ -73,7 +76,7 @@ console.log(10 === "10"); // false
 ```
 *Not equal/inequality operator (!=)*  
 Returns true if the operand on the left is not equal to the operand on the right and false if otherwise.  
-```
+```js
 let a = 10;
 let b = 5;
 console.log(a != b); // true
@@ -84,16 +87,16 @@ console.log(10 != "10"); // false
 *Strict not equal to/Strict inequality operator (!==)*  
 Returns true if the value on the left is not equal to the value on the right and false otherwise.  
 It compares the data types of the operands.  
-```
+```js
 let a = 100;
 let b = 50;
 console.log(a !== b); // true
 console.log(a !== 100); // false
 console.log(100 !== "100"); // true
-````
+```
 *Greater than (>)*  
 This returns true if the operand on the left is greater than the operand on the right and false otherwise.  
-```
+```js
 let a = 15;
 let b = 7;
 console.log(a > b); // true
@@ -101,7 +104,7 @@ console.log(b > a); // false
 ```
 *Less than (<)*  
 This returns true if the operand on the left is less than the operand on the right and false otherwise.  
-```
+```js
 let a = 15;
 let b = 7;
 console.log(a < b); // false
@@ -110,7 +113,7 @@ console.log(b < a); // true
 
 *Greater than or equal to (>=)*  
 This returns true if the operand on the left is greater than or equal to the operand on the right.  
-```
+```js
 let a = 15;
 let b = 7;
 console.log(a >= b); // true
@@ -120,7 +123,7 @@ console.log(10 >= 10); // true
 
 *Less than or equal to (<=)*  
 This returns true if the operand on the left is less than or equal to the operand on the right.  
-```
+```js
 let a = 10;
 let b = 5;
 console.log(a <= b); // false
@@ -130,7 +133,7 @@ console.log(10 <= 10); // true
 **Logical**  
 Used for boolean logic.   
 *Logical AND operator (&&)* - Returns true if both operands are true.  
-```
+```js
 console.log(true && true); // true
 console.log(true && false); // false
 ```
@@ -142,7 +145,7 @@ console.log(true && false); // false
 |false|false|false|
 
 *Logical OR operator ()* - Returns true if at least one of the operands is true otherwise false.  
-```
+```js
 console.log(true || true); // true
 console.log(true || false); // true
 console.log(false || false); // false
@@ -155,7 +158,7 @@ console.log(false || false); // false
 |false|false|false|
 
 *Logical NOT operator (!) - Negates boolean value of an operator.  
-```
+```js
 console.log(!true); // false
 console.log(!false); // true
 ```

@@ -13,7 +13,7 @@ Variables or functions that are declared under a global namespace (like area or 
 It means that all the variables that have global scope can be easily accessed from anywhere within the code or a program.
 
 Example
-```
+```js
 // Global scoped letiable
 let global_letiable = "Software development class";
  
@@ -41,7 +41,7 @@ These are variables that are declared inside a function or a method.
 It means those variables or functions which are declared inside the function or a method can be accessed within that function only.
 
 Example
-```
+```js
 function main_function() {
  
     // letiable with local scope...    
@@ -71,7 +71,7 @@ multiplyBy2();
 ```
 
 Output
-```
+```js
 10
 undefined
 Uncaught ReferenceError: a is not defined
@@ -83,7 +83,7 @@ Block scope is related to the variables or functions which are declared using le
 This scope tells us that variables that are declared inside a block { }, can be accessed within that block only, not outside of that block.
 
 Example
-```
+```js
 {
     let x = 13;
 }
@@ -117,7 +117,7 @@ Scope chain means that one variable has a scope and is used by another variable 
 This complete chain formation goes on and stops when the user wishes to stop it according to the requirement.
 
 Example
-```
+```js
 // Global letiable
 let global_letiable = 20;
  
@@ -144,7 +144,7 @@ function main_function() {
 main_function();
 ```
 Output
-```
+```js
 30
 20
 ```

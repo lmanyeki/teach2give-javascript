@@ -20,7 +20,7 @@ support available.
 #### - Internal Javascript  
 JavaScript is written inside a `<script>` tag within the HTML file.  
 Placing scripts at the bottom of the `<body>` element improves the display speed, because script interpretation slows down the display. 
-```
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -40,7 +40,7 @@ Placing scripts at the bottom of the `<body>` element improves the display speed
 #### - External JavaScript  
 JavaScript is stored in a separate .js file and linked to the HTML document using the `<script>` tag with a src attribute.  
 index.html:  
-```
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -55,7 +55,7 @@ index.html:
 </html>
 ```
 app.js: 
-```
+```js
 console.log("Welcome to my page!");
 console.log("JavaScript is fun");
 ```
@@ -70,7 +70,7 @@ This ensures that scripts are loaded after the HTML is fully loaded.
 It loads scripts asynchronously and runs them as soon as they are downloaded but may execute JavaScript out of order.  
 `<script src="script.js" async></script>`
 - **Put the script tag at the very end of the page before the closing body tag.**  
-```
+```html
 ...
     <script src="app.js"></script>
 </body>

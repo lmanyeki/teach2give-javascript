@@ -10,24 +10,24 @@ The if statement is used for execution of a block of code if a specified conditi
 
 The syntax is as follows:
 
-```
+```js
 if(condition) 
 {
    // Statements to execute if
    // condition is true
 }
 ```
-
-```
 EXAMPLE
+```js
 if (10 > 5) {
       let outcome = "if block";
 }
 ​
 outcome;
-**OUTPUT**
-"if block"
 ```
+**OUTPUT**
+
+`"if block"`
 
 The keyword **if** tells JavaScript to start the conditional statement.
 
@@ -42,7 +42,7 @@ Because the condition passes, the variable outcome is assigned the value "if blo
 An if statement can be extended with an else statement, which adds another block to run when the if conditional doesn’t pass.
 
 The syntax is as follows:
-```
+```js
 if (condition)
 {
     // Executes this block if
@@ -57,16 +57,18 @@ else
 
 Example
 
-```
+```js
 if ("food" === "soda") {
       let outcome = "if block";
 } else {
       let outcome = "else block";
 }
 outcome;
-OUTPUT
-"else block"
 ```
+OUTPUT
+
+`"else block"`
+
 In the example above, "food" and "soda" are not equal, so the else block runs and the variable outcome gets the value "else block".
 
 ### else if statements
@@ -77,7 +79,7 @@ The if statements are executed from the top down. As soon as one of the conditio
 
 The syntax is as follows:
 
-```
+```js
 if (condition)
     statement;
 else if (condition)
@@ -87,7 +89,7 @@ else if (condition)
 else
     statement;
 ```
-```
+```js
 let i = 20;
 
 if (i == 10)
@@ -98,10 +100,10 @@ else if (i == 20)
     console.log("i is 20");
 else
     console.log("i is not present");
-
-    OUTPUT
-i is 20
 ```
+OUTPUT
+
+`i is 20`
 
 ### Switch statement
 
@@ -111,7 +113,7 @@ It provides an alternative to long if-else chains, improving readability and mai
 
 The syntax is as follows:
 
-```
+```js
 switch (expression) {
     case value1:
         // code block 1;
@@ -134,7 +136,7 @@ switch (expression) {
 
 Example
 
-```
+```js
 let day = 3;
 let dayName;
 
@@ -189,14 +191,13 @@ The syntax is:
 
 Example
 
-```
+```js
 let PMarks = 50;
 
 let res = (PMarks > 39) ? "Pass" : "Fail";
 
 console.log(res);
-
+```
 OUTPUT
 
-Pass
-```
+`Pass`

@@ -11,7 +11,7 @@ The for loop repeats a block of code a specific number of times.
 It contains initialization, condition, and increment/decrement in one line.
 
 Syntax:
-```
+```js
 for (initialization; condition; increment/decrement) {
     // Code to execute
 }
@@ -24,7 +24,7 @@ for (initialization; condition; increment/decrement) {
 
 Example
 
-```
+```js
 for (let i = 1; i <= 3; i++) {
     console.log("Count:", i);
 }
@@ -43,13 +43,13 @@ It executes as long as the condition is true.
 It can be thought of as a repeating if statement. 
 
 Syntax: 
-```
+```js
 while (condition) {
     // Code to execute
 }
 ```
 Example
-```
+```js
 let i = 0;
 while (i < 3) {
     console.log("Number:", i);
@@ -57,7 +57,7 @@ while (i < 3) {
 }
 ```
 Output
-```
+```js
 Number: 0
 Number: 1
 Number: 2
@@ -68,7 +68,7 @@ Number: 2
 This is similar to while loop except it executes the code block at least once before checking the condition.
 
 Syntax:
-```
+```js
 do {
   /* code of block that will be
      executed at least once even if
@@ -76,7 +76,7 @@ do {
 } while (condition);
 ```
 Example
-```
+```js
 let i = 0;
 do {
     console.log("Iteration:", i);
@@ -84,7 +84,7 @@ do {
 } while (i < 3);
 ```
 Output
-```
+```js
 Iteration: 0
 Iteration: 1
 Iteration: 2
@@ -96,13 +96,13 @@ It is used to iterate over the properties of an object.
 It only iterates over keys of an object which have their enumerable property set to “true”.
 
 Syntax:
-```
+```js
 for (let key in object) {
     // Code to execute
 }
 ```
 Example
-```
+```js
 const obj = { name: "Ashish", age: 25 };
 for (let key in obj) {
     console.log(key, ":", obj[key]);
@@ -110,7 +110,7 @@ for (let key in obj) {
 ```
 
 Output
-```
+```js
 name : Ashish
 age : 25
 ```
@@ -121,13 +121,13 @@ This is used to iterate over iterable objects like arrays, strings, or sets.
 It directly iterate the value and has more concise syntax than for loop.
 
 Syntax:
-```
+```js
 for (let value of iterable) {
     // Code to execute
 }
 ```
 Example
-```
+```js
 let a = [1, 2, 3, 4, 5];
 for (let val of a) {
     console.log(val);
@@ -135,7 +135,7 @@ for (let val of a) {
 ```
 
 Output
-```
+```js
 1
 2
 3
@@ -156,7 +156,7 @@ break statement is used to terminate the execution of the loop or the switch sta
 It is used in the following ways: 
 
 **In Switch Block (To come out of the block)**
-```
+```js
 const fruit = "Mango";
 
 switch (fruit) {
@@ -171,11 +171,12 @@ switch (fruit) {
 }
 ```
 Output
+
 `Mango is delicious.`
 
 **In a For Loop (To come out of the Loop)**
 
-```
+```js
 for (let i = 1; i < 6; i++) {
     if (i == 4) break;
     console.log(i);
@@ -183,13 +184,13 @@ for (let i = 1; i < 6; i++) {
 ```
 
 Output
-```
+```js
 1
 2
 3
 ```
 **while and do-while loop examples**
-```
+```js
 // Using break in a while loop
 let i = 1;
 while (i <= 5) {
@@ -200,13 +201,13 @@ while (i <= 5) {
     i++;
 }
 ```
-```
 Output
+```js
 1
 2
 3
 ```
-```
+```js
 // Using break in a do-while loop
 let j = 1;
 do {
@@ -217,8 +218,8 @@ do {
     j++;
 } while (j <= 5);
 ```
-```
 Output
+```js
 1
 2
 3
@@ -229,7 +230,7 @@ Output
 The continue statement is used to break the iteration of the loop and follow with the next iteration.
 
 Example of continue to print only odd Numbers smaller than 10
-```
+```js
 for (let i = 0; i < 10; i++) {
     if (i % 2 == 0) continue;
     console.log(i);
@@ -237,7 +238,7 @@ for (let i = 0; i < 10; i++) {
 ```
 
 Output
-```
+```js
 1
 3
 5

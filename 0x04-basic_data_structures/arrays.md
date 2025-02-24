@@ -32,7 +32,7 @@ console.log(b);
 
 Output
 
-```
+```js
 []
 [ 10, 20, 30 ]
 ```
@@ -75,7 +75,7 @@ console.log(a[1]);
 
 Output
 
-```
+```js
 food
 juice
 ```
@@ -131,7 +131,7 @@ console.log(a);
 
 Output
 
-```
+```js
 [ 'food', 'soda', 'dessert' ]
 [ 'food', 'juice', 'dessert' ]
 ```
@@ -191,7 +191,7 @@ console.log("After removing 2 elements starting from index 1: " + a);
 
 Output
 
-```
+```js
 Original array: food,soda,dessert
 After removing the last: food,soda
 After removing the first: soda
@@ -235,7 +235,7 @@ console.log("After decreasing length: ", a);
 
 Output
 
-```
+```js
 After increasing length:  [ 'food', 'soda', 'dessert', <4 empty items> ]
 After decreasing length:  [ 'food', 'soda' ]
 ```
@@ -256,7 +256,7 @@ for (let i = 0; i < a.length; i++) {
 
 Output
 
-```
+```js
 food
 soda
 dessert
@@ -274,7 +274,7 @@ a.forEach(function myfunc(x) {
 
 Output
 
-```
+```js
 food
 soda
 dessert
@@ -329,7 +329,7 @@ console.log("Using instanceof method: ", courses instanceof Array);
 
 Output
 
-```
+```js
 Using Array.isArray() method:  true
 Using instanceof method:  true
 ```
